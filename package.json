@@ -1,0 +1,21 @@
+{
+  "name": "kpop-eo-mysql",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "dayjs": "^1.11.18",
+    "dotenv": "^16.4.5",
+    "mysql2": "^3.15.1"
+  },
+  "scripts": {
+    "etl:dim": "node etl/load_dims_mysql.js",
+    "etl:facts": "node etl/load_facts_mysql.js",
+    "etl:all": "npm run etl:dim && npm run etl:facts"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
